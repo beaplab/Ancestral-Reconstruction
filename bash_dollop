@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for f in *.phylip; 
+ do
+ mkdir /home/agalvez/data/sims/dollop/$f;
+ cp /home/agalvez/data/sims/phylip_format/$f /home/agalvez/data/sims/dollop/$f;
+ cd /home/agalvez/data/sims/dollop/$f;
+ echo "$f" | cat > input;
+ echo "U" | cat >> input;
+ echo "5" | cat >> input;
+ echo "Y" | cat >> input;
+ echo "/home/agalvez/data/sims/trees/tree_nodenames.txt" | cat >> input;
+ phylip dollop < input > screenout;
+done
+
