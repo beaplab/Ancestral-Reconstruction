@@ -1,2 +1,2 @@
 # Ancestral-Reconstruction
-Project aimed to prove Dollo parsimony distortions in ancestral reconstructions.
+Scripts and templates to accompany "Dollo parsimony overestimates ancestral gene content reconstructions"
